@@ -1,10 +1,9 @@
 import React from 'react'
 
-function history() {
+function history(props) {
+    // alert(`history ${props.w}`)
     return (
         <div>
-            single history component
-            single history component
             single history component
         </div>
     )

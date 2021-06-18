@@ -4,7 +4,7 @@ import React from 'react';
 import 'antd/dist/antd.css';
 import HistoryList from './historyList';
 import Result from './result';
-import Keypad from './keypad';
+import Keypad from './Keypad';
 
 import { Card } from 'antd';
 const { Meta } = Card;
@@ -23,7 +23,7 @@ function console() {
                         <div className="row" id="result">
                             <Result/>
                         </div>
-                        <div className="row" id="keypad">
+                        <div className="row" id="Keypad">
                             <Keypad/>
                         </div>
                     </div>
