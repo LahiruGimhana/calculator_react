@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-function key() {
+function Key(props) {
+    alert('dddddddddddddddddd');
     return (
         <div>
-            single key
+            {props.data}
+            {/* single Key */}
+            {/* alert({props.data}); */}
         </div>
     )
 }
 
-export default key
+export default Key

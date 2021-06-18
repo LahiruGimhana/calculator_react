@@ -34,19 +34,19 @@
     /* border: 1px rgb(255, 0, 0) solid; */
   }
 
-.col{
+/* .col{ */
     /* border: 1px blue solid; */
 
-}
-.row{
+/* } */
+/* .row{ */
     /* border: 1px blue solid; */
 
-}
+/* } */
 
 #result{
     height: 15vh;
 }
-#keypad{
+#Keypad{
     height: 45vh;
     /* padding: 1px; */
     background-color: rgb(61, 66, 71);
