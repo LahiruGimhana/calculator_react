@@ -2,11 +2,12 @@ import React ,{ useState} from 'react';
 import Key from './Key';
 import './Keypad.css';
 import { Card, InputNumber } from 'antd';
-
+import {sendInputNu , sendInputOpr} from '../redux/action/calculationAction';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 function Keypad(props) {
-
+    let dispatch=useDispatch();
     const gridStyle = {
         width: '25%',
         height: '9vh',
@@ -15,25 +16,22 @@ function Keypad(props) {
         paddingBottom:'1vh  ',
         borderColor: 'coral'
       };
-     
-      const [name, setName] = useState({fname:'gimhana', lname:''});
 
-      const InputNum=(value)=>{
-        //   let valu=value;
-        return(
-            <Key data='hello'/>
-        );
-      }
+     
+
+      const InputNum=(inputValue)=>{
+            dispatch(sendInputNu(inputValue));
+        }
+
 
       const InputOpr=(operator)=>{ 
-            <Key data='hello'/>
-        
-    }
+            dispatch(sendInputOpr(operator));
+        }
 
     return (
         <div className="Keypad">
             <div className="row">
-                <Card.Grid style={gridStyle} onClick={()=>setName({...name, lname: 'C'})}>C</Card.Grid>
+                <Card.Grid style={gridStyle} onClick={()=>InputOpr('C')}>C</Card.Grid>
                 <Card.Grid style={gridStyle} onClick={()=>InputOpr('x')}>x</Card.Grid>
                 <Card.Grid style={gridStyle} onClick={()=>InputOpr('%')}>%</Card.Grid>
                 <Card.Grid style={gridStyle} onClick={()=>InputOpr('/')}>/</Card.Grid>
@@ -61,7 +59,8 @@ function Keypad(props) {
                 <Card.Grid style={gridStyle} onClick={()=>InputOpr('+/-')}>+/-</Card.Grid>
                 <Card.Grid style={gridStyle} onClick={()=>InputNum(0)}>0</Card.Grid>
                 <Card.Grid style={gridStyle} onClick={()=>InputNum('.')}>.</Card.Grid>
-                <Card.Grid style={gridStyle} onClick={()=>InputOpr('=')}>=</Card.Grid>
+                <Card.Grid style={gridStyle} onClick={()=>InputNum('=')}>=</Card.Grid>
+                {/* <Card.Grid ></Card.Grid> */}
             </div>        
         </div>
     )

@@ -1,13 +1,11 @@
 import React from 'react';
 
 function Key(props) {
-    alert('dddddddddddddddddd');
+    // alert('dddddddddddddddddd');
+    console.log(props.data);
+    
     return (
-        <div>
-            {props.data}
-            {/* single Key */}
-            {/* alert({props.data}); */}
-        </div>
+        <></>
     )
 }
 
