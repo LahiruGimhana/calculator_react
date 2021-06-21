@@ -1,12 +1,14 @@
-import React from 'react'
+import React from 'react';
+// import {useDispatch, useSelector } from 'react-redux';
 
-function history(props) {
-    // alert(`history ${props.w}`)
+
+function History() {
+    // const Result = useSelector(state => { return state.calculation_data })
     return (
         <div>
-            single history component
+            {/* {Result.Result} */}
         </div>
     )
 }
 
-export default history
+export default History

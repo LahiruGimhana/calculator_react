@@ -1,21 +1,22 @@
 import React from 'react';
-import History from './history';
+import History from './History';
 
-function historyList() {
+function HistoryList() {
     
 
-    const history=()=>{
-        return(
-            <History/>
-        );
-    }
+    // const History=()=>{
+    //     return(
+    //         <History/>
+    //     );
+    // }
 
     return (
         <div className="row" style={{backgroundColor:'rgb(61, 66, 71)', height:'60vh', paddingTop:'20px'}}>
             {/* <ul> */}
                 <ul className="list-group">
                     <div>
-                        {history()}
+                        {/* {History()} */}
+                        <History/>
                     </div>
                 </ul>
             {/* </ul> */}
@@ -24,4 +25,4 @@ function historyList() {
     
 }
 
-export default historyList
+export default HistoryList
