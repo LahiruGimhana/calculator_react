@@ -1,9 +1,9 @@
 import React from 'react';
-import './Result.css';
+import './result.css';
 import {useSelector } from 'react-redux';
 
 
-function Result() {
+function result() {
 
     // const Result = useSelector(state => { return state.calculation_data })
             // {/* <p placeholder="Result" style={{textAlign:'left',paddingTop:'0px', backgroundColor:'rgb(77, 79, 82)'}}>Standard</p> */}
@@ -27,4 +27,4 @@ function Result() {
     )
 }
 
-export default Result
+export default result

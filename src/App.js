@@ -1,7 +1,7 @@
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 // import Home from './components/test/Home';
-import Console from './components/Console';
+import Console from './components/console';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import store from './redux/store';
 import { Provider } from 'react-redux'
@@ -19,7 +19,7 @@ function App() {
         </Switch>
     </div>
     </Router>
-    </Provider>
+   </Provider>
   );
 }
 

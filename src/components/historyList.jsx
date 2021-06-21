@@ -1,7 +1,7 @@
 import React from 'react';
-import History from './History';
+import History from './history';
 
-function HistoryList() {
+function historyList() {
     
 
     // const History=()=>{
@@ -25,4 +25,4 @@ function HistoryList() {
     
 }
 
-export default HistoryList
+export default historyList

@@ -1,9 +1,9 @@
-import './Console.css';
+import './console.css';
 
 import React from 'react';
 import 'antd/dist/antd.css';
-import HistoryList from './HistoryList';
-import Result from './Result';
+import HistoryList from './historyList';
+import Result from './result';
 import Keypad from './Keypad';
 
 import { Card } from 'antd';
@@ -12,7 +12,7 @@ const { Meta } = Card;
 
 // import { Row, Col } from 'antd';
 
-function Console() {
+function console() {
     return (
         <>
         <div className="container">
@@ -39,4 +39,4 @@ function Console() {
     )
 }
 
-export default Console
+export default console
